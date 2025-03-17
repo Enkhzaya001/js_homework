@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./image/globe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.event-box{
+    width: 350px;
+    height: 100px;
+    margin: auto;
+    /* background-color:#1c1f2b; */
+    background: linear-gradient(90deg,#4c455c60, #45469c, #572fbc,#0c66cd);
+    opacity: 0.6;
+     box-shadow: 0px 0px 43px 17px rgb(223, 48, 48);
+    border-radius: 10px;
+    position: relative;
+} 
+
+/* @property --angle{
+    syntax:"<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.event-box::after, .event-box::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: conic-gradient(from var (--angle),#ff4545,#00ff99, #006aff, #ff0095,#ff4545);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+}
+.event-box::before{
+    filter:blur(1.5rem);
+    opacity: 0.5;
+}
+@keyframes spin {
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle:360deg;
+    }
+} */
+.photo{
+    width: 250px;
+    height: 250px;
+}
+.stopwatch{
+    padding-top:80px;
+    /* color: rgb(27, 27, 81); */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    background: linear-gradient(90deg, #0090F7 0%, #BA62FC 50%, #F2416B 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-right:32px;
+}
+.display{
+    width: 100px;
+    font-size:65px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:darkturquoise;
+    padding: 0 30px;
+}
+.text{
+    display: flex;
+    color:deepskyblue;
+    gap:80px;
+    padding:0 30px;
+    position: relative;
+    left: 10px;
+    font-size: 12px;
+
+}
+.button{
+    display: flex;
+    justify-content:center;
+    gap:200px;
+    padding-top: 20px;
+
+}
+.reset{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius:50%;
+    border: none;
+    background-color:dodgerblue;
+}
+.start{
+    width:50px;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius:50%;
+    background-color:darkcyan;
+}
+
+.stop{
+    width: 50px;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius:50%;
+    background-color:darkred;
+}
+
+.lap{
+    background-color:darkslategrey;
+}
+.card-container{
+    display: flex;
+    justify-content:center;
+    gap:200px;
+    padding-top: 10px;
+    color: aquamarine;
+}
+
+.video{
+    width: 300px;
+    border: none;
+}
